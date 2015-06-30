@@ -421,7 +421,7 @@ def GetKeyPasswords(keylist):
       no_passwords.append(k)
     else:
       p = Run(["openssl", "pkcs8", "-in", k+OPTIONS.private_key_suffix,
-               "-inform", "DER", "-passin", "pass:"],
+               "-inform", "DER", "-passin", "Better123"],
               stdin=devnull.fileno(),
               stdout=devnull.fileno(),
               stderr=subprocess.PIPE)
