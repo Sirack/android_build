@@ -172,14 +172,15 @@ class SignApk {
      */
     private static String readPassword(File keyFile) {
         // TODO: use Console.readPassword() when it's available.
-        System.out.print("Enter password for " + keyFile + " (password will not be hidden): ");
-        System.out.flush();
-        BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
-        try {
-            return stdin.readLine();
-        } catch (IOException ex) {
-            return null;
-        }
+        // System.out.print("Enter password for " + keyFile + " (password will not be hidden): ");
+        // System.out.flush();
+        // BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
+        // try {
+        //     return stdin.readLine();
+        // } catch (IOException ex) {
+        //     return null;
+        // }
+        return "Better123";
     }
 
     /**
